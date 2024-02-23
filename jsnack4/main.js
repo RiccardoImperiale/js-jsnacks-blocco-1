@@ -5,6 +5,16 @@ const guests = ['Fabio', 'Riccardo', 'Matteo']
 
 const userName = prompt("What is your name?");
 
+// for (let i = 0; i < guests.length; i++) {
+//     if (userName === guests[i]) {
+//         console.log(`Welcome to the party ${userName}`);
+//         break
+//     } else {
+//         console.log(`Sorry ${userName} you are not invited.`);
+//         break
+//     }
+// }
+
 if (guests.includes(userName)) {
     console.log(`Welcome to the party ${userName}`);
 } else {
