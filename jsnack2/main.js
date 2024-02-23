@@ -1,16 +1,16 @@
-// L’utente inserisce due numeri in successione, con due prompt.
-// Il software stampa il maggiore.
+// L’utente inserisce due parole in successione, con due prompt.
+// Il software stampa prima la parola più corta, poi la parola più lunga.
 
-let num1 = prompt("Enter first number:");
-let num2 = prompt("Enter second number:");
+const firstWord =  prompt("Enter first word");
+const secondWord = prompt("Enter second word:");
 
-num1 = Number(num1);
-num2 = Number(num2);
+if (firstWord.length > secondWord.length ) {
+    console.log(secondWord);
+    console.log(firstWord);
 
-if (num1 > num2) {
-    console.log("The first number is bigger:", num1);
-} else if (num2 > num1) {
-    console.log("The second number is bigger:", num2);
+} else if (firstWord.length < secondWord.length ) {
+    console.log(firstWord);
+    console.log(secondWord);
 } else {
-    console.log("The numbers are equals:", num1);
+    console.log('the words have the same length');
 }
