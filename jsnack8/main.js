@@ -3,11 +3,13 @@
 
 let n = prompt("Enter a 4 digits number");
 let sum = 0
+
 // if (n.length === 4) {
 // // for (let i = 0; i < n.length; i++) {
 // //     sum += Number(n[i]);
 // // }
 // }
+
 let i = 0;
 
 if (n.length === 4) {
@@ -15,6 +17,8 @@ if (n.length === 4) {
         sum += Number(n[i]);
         i++
     }
+} else {
+    alert("Enter a 4 digits number")
 }
 
 console.log(sum);
