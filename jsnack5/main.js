@@ -4,11 +4,22 @@
 
 const array = [];
 
-for (let i = 0; i < 6; i++) {
+// for (let i = 0; i < 6; i++) {
+//     let num = Number(prompt("Enter a number"));
+//     if (num % 2 !== 0){
+//         array.push(num)
+//     } 
+// }
+
+let i = 0;
+
+while (i < 6) {
     let num = Number(prompt("Enter a number"));
-    if (num % 2 !== 0){
+    if (num % 2 !== 0) {
         array.push(num)
-    } 
+    }
+    i++
 }
+
 
 console.log(array);
